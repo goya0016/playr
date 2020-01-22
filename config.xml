@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.algonquin.goya0016.playr" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.algonquin.goya0016.playr" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Goya0016-Playr</name>
     <description>
         A basic media player
@@ -18,12 +18,23 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
-        <icon src="/res/icons/android/Artboard 1.png"/>
 
-         <splash src="/res/screen/android/splash.png"/>
+        <icon src="/res/icons/android/Artboard.png"/>
+
+        <splash src="/res/screen/android/mdpi.png" density="land-mdpi"/>
+        <splash src="/res/screen/android/hdpi.png" density="land-hdpi"/>
+        <splash src="/res/screen/android/xhdpi.png" density="land-xhdpi"/>
+        <splash src="/res/screen/android/xxhdpi.png" density="land-xxhdpi"/>
+        <splash src="/res/screen/android/xxxhdpi.png" density="land-xxxhdpi"/>
+
+        <splash src="/res/screen/android/pmdpi.png" density="port-mdpi"/>
+        <splash src="/res/screen/android/phdpi.png" density="port-hdpi"/>
+        <splash src="/res/screen/android/pxhdpi.png" density="port-xhdpi"/>
+        <splash src="/res/screen/android/pxxhdpi.png" density="port-xxhdpi"/>
+        <splash src="/res/screen/android/pxxxhdpi.png" density="port-xxxhdpi"/>
 
     <preference name="AutoHideSplashScreen" value="true" />
-        <preference name="SplashScreenDelay" value="5000" />
+    <preference name="SplashScreenDelay" value="5000" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
