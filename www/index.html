@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; 
+        style-src 'self' 'unsafe-inline'; 
+        media-src *; 
+        script-src 'unsafe-inline' 'self';
+        img-src 'self' data: content:;">
+        <title>Hello World</title>
+    </head>
+    <body>
+        <h1>MUSIC PLAYER</h1>
+        <div class="pagefirst page active">
+            
+            <img src='img/up-arrow.svg' alt="up" class="up">
+            <div class="container ">
+            </div>
+        </div>
+        
+        <div class="playing page">
+            <img src='img/down-arrow.svg' alt="down" class="down">
+            <img src="" alt="animation" class="animation">
+            
+            <div class="duration">
+                <span class="current">0.00</span>
+                <progress max="0" value="0" id="bar"></progress>
+                <span class="length">0.00</span>
+            </div>
+
+            <div class="controls">
+                <img src='img/previous.svg' alt="previous" class="prev">
+                <img src='img/play.svg' alt="play" class="play hide active">
+                <img src='img/pause.svg' alt="pause" class="pause hide ">
+                <img src='img/next.svg' alt="next" class="next">
+            </div>
+                    
+            </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

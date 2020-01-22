@@ -1,0 +1,122 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 1rem;
+    font-size: 1.25rem;
+    
+    background-color: #9febe0 ;
+}
+h1{
+    text-align: center;
+    text-shadow: 1px 2px black;
+}
+#logo{
+    height:50px;
+    width:50px;
+    margin-right:1rem;
+    float:left;
+    border-radius: 2rem;
+    border:2px solid;
+}
+p:active{
+    transform: scale(1.25);
+}
+img{
+    height:50px;
+}
+.up{
+    display: block;
+}
+.pause,.play,.next,.prev{
+    box-shadow: 4px 4px black;
+    border-radius: 1.75rem;
+}
+.pause:active,
+.play:active,.next:active,.prev:active{
+    transform: scale(0.75);
+}
+
+.play,.pause{
+    position: relative;
+}
+
+.hide{
+    /* position: absolute; */
+    display: none;
+    opacity: 0;
+    z-index:1;
+    /* overflow: hidden; */
+    transition: opacity 0.5s linear;
+}
+.page{
+    position: absolute;
+    /* display: none; */
+    opacity: 0;
+    /* z-index:1; */
+    transform: translateY(90vh);
+    overflow: hidden;
+    transition: transform 0.5s linear;
+}
+.page.active{
+    opacity: 1;
+    z-index: 100;
+    transform: translateY(0vh);
+    position: absolute;
+    display: block;
+    width: 90vw;
+}
+.hide.active{
+    opacity: 1;
+    z-index: 100;
+    /* position: initial; */
+    display: block;
+}
+
+#artist{
+    color:hsl(0, 0%, 60%);
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: flex-start; */
+}
+.duration{
+    color:hsl(0, 0%, 30%);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+#bar{
+    width:75vw;
+    height:15px;
+    margin-top: 0.5rem;
+    /* align-items:center; */
+    /* padding-bottom: 2rem; */
+
+}
+.controls{
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 80vw;
+    /* position:fixed; */
+    /* background-color: red; */
+    /* position: absolute; */
+}
+.controls :nth-child(n){
+    margin-top:1.5rem;
+    margin-left: 13vw;
+}
+.animation{
+    margin-left: 10vw;
+    margin-right: 7vw;
+    height:32vh;
+    width:70vw;
+    border-radius: 50%;
+    box-shadow: 5px 4px black;
+
+}
+.title{
+    font-size: 2rem;
+    text-align: center;
+}
+.artistsecond{
+    color:hsl(0, 0%, 30%);
+    text-align: center;
+}
